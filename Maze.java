@@ -184,119 +184,12 @@ public class Maze {
 	
 	
 	public static void main(String[] args) throws IOException {
-		//The fancy test
-		Maze maze1 = new Maze("C:\\Users\\Computer\\eclipse-workspace\\BC project\\src\\mediummaze.txt");
+		Maze maze1 = new Maze("mediummaze.txt");
 		Player player;
 		maze1.readData();
 		player = maze1.createPlayer();
 		maze1.drawMaze();
 		System.out.println(maze1.getMazeName());
-
-		//The archaeic test
-//		Maze maze2 = new Maze("here");
-//
-//		Row row1 = new Row();
-//		Row row2 = new Row();
-//		Row row3 = new Row();
-//		Row row4 = new Row();
-
-//		Tile tile1 = new Tile(0,0, "wall", "wall", "wall", "wall", "S", null);
-//		Tile tile2 = new Tile(0,1, "no", "wall", "no", "wall", "no", null);
-//		Tile tile3 = new Tile(0,2, "wall", "wall", "no", "no", "no", null);
-//		Tile tile4 = new Tile(0,3, "no", "wall", "wall", "no", "no", null);
-//		
-//		Tile tile5 = new Tile(1,0, "wall", "wall", "no", "wall", "no", null);
-//		Tile tile6 = new Tile(1,1, "wall", "wall", "no", "no", "no", null);		
-//		Tile tile7 = new Tile(1,2, "wall", "no", "wall", "no", "no", null);
-//		Tile tile8 = new Tile(1,3, "wall", "no", "wall", "wall", "no", null);
-//		
-//		ArrayList<Tile> tiles = new ArrayList<Tile>();
-//		tiles.add(tile1);
-//		tiles.add(tile2);
-//		tiles.add(tile3);
-//		tiles.add(tile4);
-//		tiles.add(tile5);
-//		tiles.add(tile6);
-//		tiles.add(tile7);
-//		tiles.add(tile8);
-//		
-//		Wall wallBetweenNS;
-//		Wall wallBetweenEW;
-//		Wall wallSouth;
-//		Wall wallNorth;
-//		Wall wallEast;
-//		Wall wallWest;
-//
-//		for(int i=0; i < tiles.size(); i++) {
-//			for(int j = tiles.size()-1; j >= 0; j--) {
-//				if((tiles.get(i).isSouthOf(tiles.get(j))) && (! tiles.get(i).getNorthWall().equals("no")) && (! tiles.get(i).getSouthWall().equals("fake"))) {
-//					wallBetweenNS = new Wall();
-//					tiles.get(i).setWallNorth(wallBetweenNS);
-//					tiles.get(j).setWallSouth(wallBetweenNS);
-//					wallBetweenNS.setTile1(tiles.get(i));
-//					wallBetweenNS.setTile2(tiles.get(j));
-//					System.out.println(tiles.get(i).getWallNorth() + " " + tiles.get(j).getWallSouth());
-//					System.out.println(tiles.get(i) + " " + wallBetweenNS.getTile1());
-//					System.out.println(tiles.get(j) + " " + wallBetweenNS.getTile2());
-////					System.out.println("tile"+ (i+1) + ": " + "I share my north wall with you" + ", " + "tile"+ (j+1));
-//				}
-//				if((tiles.get(i).isWestOf(tiles.get(j))) && (! tiles.get(i).getEastWall().equals("no")) && (! tiles.get(i).getWestWall().equals("fake"))) {
-//					wallBetweenEW = new Wall();
-//					tiles.get(i).setWallEast(wallBetweenEW);
-//					tiles.get(j).setWallWest(wallBetweenEW);
-////					System.out.println(tiles.get(i).getWallNorth() + " " + tiles.get(j).getWallSouth());
-////					System.out.println("tile"+ (i+1) + ": " + "I share my east wall with you" + ", " + "tile"+ (j+1));
-//				}
-//			}
-//		}
-//		
-//		for(Tile tile: tiles) {
-//			if((tile.getWallNorth() == null) && (! tile.getNorthWall().equals("no")) && (! tile.getNorthWall().equals("fake"))) {
-////				System.out.println("tile"+ counter + ": My north wall is my own.");
-//				wallNorth = new Wall();
-//				tile.setWallNorth(wallNorth);
-//			}
-//			
-//			if((tile.getWallSouth() == null) && (! tile.getSouthWall().equals("no")) && (! tile.getSouthWall().equals("fake"))) {
-////				System.out.println("tile"+ counter + ": My south wall is my own.");
-//				wallSouth = new Wall();
-//				tile.setWallSouth(wallSouth);
-//			} 
-//			
-//			if((tile.getWallEast() == null) && (! tile.getEastWall().equals("no")) && (! tile.getEastWall().equals("fake"))) {
-////				System.out.println("tile"+ counter + ": My east wall is my own.");
-//				wallEast = new Wall();
-//				tile.setWallEast(wallEast);
-//			} 
-//			
-//			if((tile.getWallWest() == null) && (! tile.getWestWall().equals("no")) && (! tile.getWestWall().equals("fake"))) {
-////				System.out.println("tile"+ counter + ": My west wall is my own.");
-//				wallWest = new Wall();
-//				tile.setWallWest(wallWest);
-//			}
-//		}
-	
-//		row1.getTiles().add(tile1);
-//		row1.getTiles().add(tile2);
-//		
-//		row2.getTiles().add(tile3);
-//		row2.getTiles().add(tile4);
-//
-//		row3.getTiles().add(tile5);
-//		row3.getTiles().add(tile6);
-//
-//		row4.getTiles().add(tile7);
-//		row4.getTiles().add(tile8);
-//		
-//		System.out.println(row1.isStartingRow());
-//		System.out.println(row2.isStartingRow());
-//
-//		maze2.getRows().add(row1);
-//		maze2.getRows().add(row2);
-//		maze2.getRows().add(row3);
-//		maze2.getRows().add(row4);
-//		
-//		maze2.drawMaze();
 	}
 	
 }
