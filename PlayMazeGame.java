@@ -5,7 +5,6 @@ import java.io.Writer;
 import java.util.Scanner;
 
 public class PlayMazeGame {
-	// C:\Users\Computer\eclipse-workspace\BC project\src\basemaze.txt
 	@SuppressWarnings("resource")
 	public static Maze createMaze() {
 		String dataSource;
