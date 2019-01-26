@@ -180,18 +180,6 @@ public class Maze {
 		}
 		System.out.println("+" + bottomLine);
 	}
-	
-	
-	
-	public static void main(String[] args) throws IOException {
-		Maze maze1 = new Maze("mediummaze.txt");
-		Player player;
-		maze1.readData();
-		player = maze1.createPlayer();
-		maze1.drawMaze();
-		System.out.println(maze1.getMazeName());
-	}
-	
 }
 
 
