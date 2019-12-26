@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @invar	Each player starts with 0 steps taken.
  * @invar	Whether a player has performed an action or not is false by default and will only be changed within the methods to move, break walls and open doors.
  * 
- * @author Paulien Leten
+ * @author Paulien L
  * @version 11
  *
  */
